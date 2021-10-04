@@ -19,7 +19,7 @@ namespace Banque
             this.titulaire = Untitulaire;
             this.devise = Unedevise;
             this.Nbcompte = UnNombreCompte;
-            CompteB.UnNombreCompte ++,;
+            CompteB.UnNombreCompte ++;
         }
 
         public CompteB(string Untitulaire, string Unedevise, int UnNbcompte)
@@ -29,6 +29,7 @@ namespace Banque
             this.devise = Unedevise;
             this.Nbcompte = UnNbcompte;
         }
+
 
         //SETTERS
         public void SetSolde(float Unsolde)
