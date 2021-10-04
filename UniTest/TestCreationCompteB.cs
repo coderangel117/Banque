@@ -5,7 +5,7 @@ using Banque;
 namespace BanqueTest
 {
     [TestClass]
-    public class TestCreationCompteB
+    public class TestComptes
     {
         [TestMethod]
         public void TestsoldeCreationCompteB()
