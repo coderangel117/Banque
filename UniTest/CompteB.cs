@@ -83,7 +83,7 @@ namespace Banque
         }
         public void Debiter(int UnMontant)
         {
-            this.Solde = this.Solde + UnMontant;
+            this.Solde = this.Solde - UnMontant;
         }
 
     }
