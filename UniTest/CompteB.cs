@@ -13,7 +13,7 @@ namespace Banque
 
 
         //CONSTRUCTOR
-        public CompteB(float Unsolde, string Untitulaire, string Unedevise, int UnNbcompte)
+        public CompteB(float Unsolde, string Untitulaire, string Unedevise)
         {
             this.Solde = Unsolde;
             this.titulaire = Untitulaire;
@@ -22,7 +22,7 @@ namespace Banque
             CompteB.UnNombreCompte ++;
         }
 
-        public CompteB(string Untitulaire, string Unedevise, int UnNbcompte)
+        public CompteB(string Untitulaire, string Unedevise)
         {
             this.Solde = 0;
             this.titulaire = Untitulaire;

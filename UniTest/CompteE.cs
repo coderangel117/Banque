@@ -4,22 +4,21 @@ using System.Text;
 
 namespace Banque
 {
-    class CompteE{
-        private float TauxInteret;
-        private float solde;
-        public CompteE(float UnTauxInteret, float Unsolde)
+    class CompteE  {
+        private double TauxInteret;
+        private double Solde;
+        public CompteE (double UnTauxInteret, double UnSolde)
+        {
+            this.Solde = UnSolde;
+            TauxInteret = UnTauxInteret;
+        }
+        CompteE(double UnTauxInteret)
         {
             TauxInteret = UnTauxInteret;
-            solde = Unsolde;
         }
-        CompteE(float UnTauxInteret)
+        public double CalculInteretAnnuel()
         {
-            TauxInteret = UnTauxInteret;
-            
-        }
-        public float CalculInteret()
-        {
-            return solde * TauxInteret;
+            return Solde * TauxInteret;
         }
     }
 }
