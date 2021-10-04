@@ -20,6 +20,13 @@ namespace Banque
             this.Nbcompte = UnNbcompte;
         }
 
+        public CompteB(string Untitulaire, string Unedevise, int UnNbcompte)
+        {
+            this.solde = 0;
+            this.titulaire = Untitulaire;
+            this.devise = Unedevise;
+            this.Nbcompte = UnNbcompte;
+        }
 
         //SETTERS
         public void SetSolde(int Unsolde)

@@ -1,0 +1,16 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
+
+namespace UniTest
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void TestsoldeCreationCompteB()
+        {
+
+        }
+    }
+}
