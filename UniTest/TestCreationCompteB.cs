@@ -34,13 +34,14 @@ namespace BanqueTest
             MonCompte2.Crediter(100);
             Assert.AreEqual(MonCompte2.GetSolde(), 600);
         }
+        [TestMethod]
         public void Test_GetNbCompte()
         {
             CompteB CompteB1 = new CompteB("PERINO", "euros");
             CompteB CompteB2 = new CompteB("PERINO", "euros");
             CompteB CompteB3 = new CompteB("PERINO", "euros");
             CompteE CompteE1 = new CompteE(0.5, 10);
-            Assert.AreEqual(CompteB.GetSolde, 4);
+            Assert.AreEqual(CompteB.GetNbCompte(),4) ;
         }
     }
 }

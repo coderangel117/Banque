@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Banque
 {
-    class CompteB { 
+    public class CompteB { 
         private float  Solde = 0;
         private string titulaire;
         private string devise;
-        private int Nbcompte;
-        private static int UnNombreCompte = 0; 
+        private static int Nbcompte = 0;
 
 
         //CONSTRUCTOR
@@ -18,8 +17,7 @@ namespace Banque
             this.Solde = Unsolde;
             this.titulaire = Untitulaire;
             this.devise = Unedevise;
-            this.Nbcompte = UnNombreCompte;
-            CompteB.UnNombreCompte ++;
+            CompteB.Nbcompte  ++;
         }
 
         public CompteB(string Untitulaire, string Unedevise)
@@ -27,7 +25,7 @@ namespace Banque
             this.Solde = 0;
             this.titulaire = Untitulaire;
             this.devise = Unedevise;
-            this.Nbcompte = UnNbcompte;
+            CompteB.Nbcompte++;
         }
 
 
@@ -45,11 +43,7 @@ namespace Banque
             this.devise = UneDevise;
 
         }
-        public void SetNBCompte(int UnNbCompte)
-        {
-            this.Nbcompte = UnNbCompte;
 
-        }
 
 
         //GETTERS
@@ -65,9 +59,9 @@ namespace Banque
         {
             return this.devise;
         }
-        public int GetNbCompte()
+        public static int GetNbCompte()
         {
-            return this.Nbcompte;
+            return CompteB.Nbcompte;
         }
 
 

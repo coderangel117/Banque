@@ -7,6 +7,8 @@ namespace Banque
     class CompteE  {
         private double TauxInteret;
         private double Solde;
+
+
         public CompteE (double UnTauxInteret, double UnSolde)
         {
             this.Solde = UnSolde;
